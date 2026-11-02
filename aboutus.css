@@ -1,0 +1,115 @@
+
+.about-page {
+    background: #ffffff;
+    border: 3px solid #f3c5d3;
+    border-radius: 25px;
+    padding: 35px;
+    margin-top: 30px;
+    animation: aboutAppear 1s ease;
+}
+
+.about-heading {
+    text-align: center;
+    background: #f8e1e8;
+    padding: 30px 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.about-heading h1 {
+    color: #829b82;
+    font-size: 32px;
+}
+
+.about-intro {
+    color: #76515e;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.about-section {
+    background: #f7f9f6;
+    border-left: 6px solid #9caf9c;
+    border-radius: 15px;
+    padding: 22px;
+    margin-bottom: 22px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.about-section h2 {
+    color: #d889a3;
+    margin-bottom: 12px;
+}
+
+.about-section p {
+    color: #444444;
+    line-height: 1.8;
+}
+
+.about-more {
+    text-align: center;
+    padding: 20px;
+}
+
+#aboutButton {
+    background: #d889a3;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#aboutButton:hover {
+    background: #829b82;
+    transform: scale(1.05);
+}
+
+#aboutMessage {
+    background: #f8e1e8;
+    color: #444444;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #829b82;
+}
+
+@keyframes aboutAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .about-page {
+        padding: 15px;
+    }
+
+    .about-heading h1 {
+        font-size: 25px;
+    }
+
+    .about-section {
+        padding: 17px;
+    }
+}

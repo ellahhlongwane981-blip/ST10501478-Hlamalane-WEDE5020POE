@@ -1,0 +1,112 @@
+
+.gallery-page {
+    background-color: #FCE8EE;
+    padding: 25px;
+    border-radius: 20px;
+    animation: pageAppear 1s ease-in-out;
+}
+
+/* Gallery heading */
+.gallery-heading {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid #A3B7A1;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.gallery-heading h1 {
+    color: #D889A3;
+    font-size: 32px;
+}
+
+.gallery-heading p {
+    color: #555;
+}
+
+/* Gallery title */
+.gallery-page > h2 {
+    color: #829B82;
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* Gallery layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual image cards */
+.gallery-item {
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #A3B7A1;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Gallery pictures */
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item h2 {
+    color: #D889A3;
+    font-size: 20px;
+}
+
+.gallery-item p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Message at the bottom */
+.gallery-message {
+    background-color: white;
+    border-left: 6px solid #D889A3;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: #555;
+}
+
+/* Responsive layout for tablets */
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive layout for phones */
+@media (max-width: 550px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-heading h1 {
+        font-size: 24px;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+}
