@@ -1,0 +1,104 @@
+
+/* Contacts page */
+main {
+    background-color: #FCE8EE;
+    padding: 30px;
+    border-radius: 20px;
+    animation: pageAppear 1s ease-in-out;
+}
+
+/* Main heading */
+main h1 {
+    color: #D889A3;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Section headings */
+main h2 {
+    color: #829B82;
+    margin-top: 25px;
+}
+
+/* Paragraphs */
+main p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* Contact form */
+form {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #A3B7A1;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Form labels */
+form label {
+    display: inline-block;
+    color: #829B82;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input fields */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #E8C5D0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+/* When clicking inside a field */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #A3B7A1;
+}
+
+/* Buttons */
+button {
+    background-color: #D889A3;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #829B82;
+    transform: scale(1.05);
+}
+
+/* Contact message */
+#contactMessage {
+    background-color: white;
+    border-left: 5px solid #D889A3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 25px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
